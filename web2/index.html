@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css" />
     <script src="https://kit.fontawesome.com/8c23d8560a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Zen Coding</title>
 </head>
 <body>
@@ -16,6 +17,12 @@
             </div>
             <div class="grid-box navgrid">
                 <nav class="navbar">
+                    <div class="theme">
+                        <input type="checkbox" id="checkbox" class="checkbox">
+                        <label for="checkbox" class="label">
+                            <div class="ball"></div>
+                        </label>
+                    </div>
                     <!-- <img src="./images/logo.png" alt="" class="logo"> -->
                     <ul class="nav-list">
                         <li><a href="#">Home</a></li>
@@ -43,7 +50,7 @@
     </header>
 
     <!-- Services Section -->
-    <section class="services" id = "services">
+    <section class="services" id = "services" data-aos="fade-right">
         <div class="container">
             <div class="grid-wrapper">
                 <div class="grid-box mobileapp">
@@ -76,7 +83,7 @@
     </section>
 
     <!-- Numbers Section -->
-    <section class="numbers" id = "novus">
+    <section class="numbers" id = "novus" data-aos="fade-left">
         <h1 class = "num-text"> Novus </h1>
         <p> Novus is an interactive social media experience which gives you a new perspective on the environmental and external aspects of the world.</p>
         <p class = "novus-para2">The game like features enhances the experience of sharing pictures on the app. Showcase your skills by building up your profile and competing in contests. Get involved in communities and create new relationships.</p>
@@ -161,7 +168,7 @@
     </section> -->
 
     <!-- Team Section -->
-    <section class="team" id = "team">
+    <section class="team" id = "team" data-aos="zoom-in">
         <h1 class = "team-h1">Meet the team</h1>
         <div class="grid-wrapper">
             <div class="team-mem">
@@ -256,7 +263,7 @@
     </section>
 
     <!-- Testimonial Section -->
-    <section class="testimonial" id = "testimonial">
+    <section class="testimonial" id = "testimonial" data-aos="fade-right">
         <h1 class = "testimonial-h1">What our clients say</h1>
         <p class = "testimonial-p">As a team our priority is to implement a relationship with the client. This helps us create a product that is exactly what the client wants and make it better.</p>
         <p class="testimonial-p2">Here are a few our of clients sharing their experience working with us</p>
@@ -340,6 +347,20 @@
             <h4>Terms & Conditions Apply</h4>
             <h4>Privacy Policy</h4> 
         </div>
+        <!-- Scroll to top -->
+        <i id="scrolltp" class="fa fa-arrow-up"></i>
     </section>
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script> 
+        AOS.init({
+            offset: 200,
+            delay: 100,
+            duration: 1000,
+        }); 
+    </script>
+    <!-- app.js -->
+    <script src="./app.js"></script>
+
 </body>
 </html>

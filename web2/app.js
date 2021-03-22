@@ -16,7 +16,6 @@ window.addEventListener("scroll", function () {
 });
 
 // Theme
-
 const themeToggle = document.querySelector(".checkbox");
 const body = document.querySelector("body");
 const darkmode = localStorage.getItem("dark");
