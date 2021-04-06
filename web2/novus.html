@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" /> -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
     <title>Zen Coding</title>
 </head>
@@ -35,7 +35,7 @@
     <div class="card-wrapper">
         <div class="card">
             <!-- card left -->
-            <div class="product-imgs">
+            <div class="product-imgs" data-aos="fade-right">
                 <div class="img-display">
                     <div class="img-showcase">
                         <img src="images/Novus.jpg" alt="novus splash screen">
@@ -68,7 +68,7 @@
                 </div>
             </div>
             <!-- card right -->
-            <div class="product-content">
+            <div class="product-content" data-aos="fade-left">
                 <h2 class="product-title">Novus Application</h2>
                 <!-- <a href="#" class="product-link">View more details</a> -->
                 <div class="product-rating">
@@ -186,6 +186,14 @@
             const displayWidth = document.querySelector(".img-showcase img:first-child").clientWidth;
             document.querySelector(".img-showcase").style.transform = `translateX(${-(imgId - 1) * displayWidth}px)`;
         }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script> 
+        AOS.init({
+            offset: 200,
+            delay: 100,
+            duration: 1000,
+        }); 
     </script>
 </body>
 </html>

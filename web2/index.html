@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" /> -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
     <title>Zen Coding</title>
 </head>
@@ -41,7 +41,7 @@
         </div>
     </div>
     <!-- services -->
-    <div class="services-section">
+    <div class="services-section" data-aos="fade-right">
         <div class="inner-width">
             <div class="services-container">
                 <div class="service-box">
@@ -103,7 +103,7 @@
     </div>
 
     <!-- team -->
-    <div class="container" id="team">
+    <div class="container" id="team" data-aos="fade-left">
         <div id="team-title" class="title">Meet Our Team</div>
         <div id="slider" class="owl-carousel">
             <div class="content-area">
@@ -323,6 +323,14 @@
         window.onscroll = () => {
             this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
         }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script> 
+        AOS.init({
+            offset: 200,
+            delay: 100,
+            duration: 1000,
+        }); 
     </script>
 </body>
 </html>
